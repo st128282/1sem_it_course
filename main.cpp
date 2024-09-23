@@ -1,7 +1,9 @@
 #include <iostream>
 
 int main() {
-  std::cout << "Hello world!!!" << std::endl;
+  int a = 678;
+  int b = 655;
+  std::cout << a+b << std::endl;
          
   return 0;
 }
