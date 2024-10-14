@@ -2,6 +2,8 @@
 #include <fstream>
 #include <vector>
 
+#include "prime_num.hpp"
+
 bool isPrimeNum(int a);
 
 bool isPrimeNum(int a) {
