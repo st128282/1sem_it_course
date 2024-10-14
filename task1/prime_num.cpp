@@ -2,6 +2,8 @@
 #include <fstream>
 #include <vector>
 
+bool isPrimeNum(int a);
+
 bool isPrimeNum(int a) {
   for(int i {2}; i <= sqrt(a); i++) {
     if (a % i == 0) {
