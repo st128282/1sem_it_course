@@ -5,8 +5,7 @@
 
 #include "prime_num.hpp"
 
-int main()
-{
+int main() {
   std::ifstream fin;
   fin.open("in.txt");
   
