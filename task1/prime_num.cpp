@@ -6,8 +6,8 @@
 
 bool isPrimeNum(int a);
 
-//TODO Дописать функцию, чтобы ответ был правильным для всех входных чисел
 bool isPrimeNum(int a) {
+  if (a<2){return false;}
   for(int i {2}; i <= sqrt(a); i++) {
     if (a % i == 0) {
       return false;
