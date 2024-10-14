@@ -6,6 +6,7 @@
 
 bool isPrimeNum(int a);
 
+//TODO Дописать функцию, чтобы ответ был правильным для всех входных чисел
 bool isPrimeNum(int a) {
   for(int i {2}; i <= sqrt(a); i++) {
     if (a % i == 0) {
