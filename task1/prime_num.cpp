@@ -7,7 +7,7 @@
 bool isPrimeNum(int a);
 
 bool isPrimeNum(int a) {
-  if (a < 2){
+  if (a < 2) {
     return false;
   }
 
