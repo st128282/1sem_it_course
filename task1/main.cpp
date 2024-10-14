@@ -1,20 +1,17 @@
 #include <iostream>
 #include <cmath>
 #include <fstream>
+#include "prime_num.hpp"
 #include <vector>
 
-#include "prime_num.hpp"
-
-int main() {
+int main()
+{
+  std::vector<int> primeA_B;
+  std::vector <int> & referenceprimeA_B = primeA_B;
+  int a, b;
   std::ifstream fin;
   fin.open("in.txt");
-  
-  int a = 0;
-  int b = 0;
-  fin >> a >> b;
-  
-  std::vector<int> primeNums;
-  getPrimeNums(a,b, primeNums);
-  
-  recordInFile(primeNums);
-}
+  fin >> a;
+  fin >> b;
+  prime_num_betweenA_B(a,b, primeA_B);
+  recordInFile(primeA_B);
